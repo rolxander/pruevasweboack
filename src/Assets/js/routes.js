@@ -3,13 +3,15 @@ import {Route , Switch } from 'react-router-dom';
 
 //Components
 import App from '../../Components/App';
-import Inicio from '../../Components/Templates//inicio'
+import Inicio from '../../Components/Templates/inicio';
+import Archivos from '../../Components/Templates/archivos';
 
-const ApprRoutes = () => 
+const AppsRoutes = () => 
 
 <App>
     <Switch>
-        <Route path ="/" component = {Inicio} />
+        <Route exact path ="/" component = {Inicio}/>
+        <Route exact path ="/archivos" component = {Archivos}/>
     </Switch>
 </App>
-export default ApprRoutes;
+export default AppsRoutes;

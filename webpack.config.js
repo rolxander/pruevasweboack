@@ -8,7 +8,7 @@ module.exports = () => {
     return{
         //context: __dirname,
     	entry: {
-          "devsite": path.join(__dirname, 'src/Index.js'),
+          "devsite": path.join(__dirname, 'src/index.js'),
         },
         output: {
           path: path.join(__dirname, 'devsite'),
