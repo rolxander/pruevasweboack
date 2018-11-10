@@ -6,12 +6,12 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = () => {
 
     return{
-        //context: __dirname,
+        context: __dirname,
     	entry: {
           "devsite": path.join(__dirname, 'src/index.js'),
         },
         output: {
-          path: path.join(__dirname, 'devsite'),
+          path: path.join(__dirname, 'devsite5'),
           filename: 'js/[name].[hash].js',
           publicPath: '',
           chunkFilename: 'js/[id].[chunkhash].js',
