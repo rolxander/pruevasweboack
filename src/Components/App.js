@@ -6,10 +6,13 @@ class App extends Component
         super();
     }
 
-    render()
-    {
-        return(<div><h1>Hola mundo2
-            </h1></div>
+    render(){
+        const {children}  = this.props;
+        return(
+        
+        <div>
+            {children}
+        </div>
            
             
     )}
